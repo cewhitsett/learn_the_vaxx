@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block style %}
+<style>
+.message {
+
+}
+</style>
+{% endblock %}
+{% block body %}
+  <h1>Internal Server Error</h1>
+  <p>Something is wrong with the server, redirecting you to the recipe page.
+  <p><a href="{{ url_for('index') }}">Let's get back to baking!</a>
+  <div class="redirect" id="message"></div>
+<script defer>
+    const delay = 5000;
+    document.getElementById("message").innerHTML = "Please wait, we are redirecting you to back to the kitchen!";
+    window.onload = setTimeout(() => {
+       window.location = "{{ url_for('index') }}"
+    }, delay)
+</script>
+{% endblock %}
