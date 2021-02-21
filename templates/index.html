@@ -70,7 +70,7 @@
       />
     </h1>
     <p>
-      Inform yourself. Protect others. Beat the virus.<br />
+      <strong>Inform</strong> yourself. <strong>Protect</strong> others. <strong>Beat</strong> the virus.<br />
       For Black people, by 4 Black people*.
     </p>
     <p>
@@ -103,6 +103,18 @@
           <h3>[[allChoices[rebutNum].text]]</h3>
         </div>
       </a>
+      <a
+        v-if="currentInfo === 0"
+        v-on:click="getNext(-4)"
+      >
+        <div class="info">
+          <img
+            class="big"
+            src="{{ url_for('static', filename='learnit.png') }}"
+            alt="Learn the Facts, no Vaxx"
+          />
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -119,7 +131,7 @@
     methods: {
       getNext: function(info) {
         if (info === -4) {
-
+          window.location = "{{url_for('stats')}}";
         }
         this.currentInfo = info;
         setTimeout(function(){
