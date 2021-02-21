@@ -15,11 +15,15 @@
       href="{{url_for('static', filename='styles.css')}}"
     />
     <link rel="icon" href="{{url_for('static', filename='favicon.png')}}" sizes="32x32" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;600&display=swap" rel="stylesheet">
     <title>Learn The Vaxx</title>
 
     <style>
       html {
+        font-family: 'Montserrat Alternates', sans-serif;
         scroll-behavior: smooth;
+        font-weight: 300;
       }
       body {
         text-align:left;
@@ -27,6 +31,7 @@
       }
       h1, h2, h3, h4, h5, h6 {
         text-align: center;
+        font-weight: 600;
       }
       blockquote {
         margin-left: auto;

@@ -20,7 +20,7 @@ def stats():
 def state():
   return render_template("states.html", state_info=state_info)
 
-@app.route("/testes")
+@app.route("/testimonials")
 def tests():
   return render_template("testimonials.html", testimonials=testimonials)
 
