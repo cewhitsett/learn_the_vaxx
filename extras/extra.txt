@@ -1,0 +1,155 @@
+1. Alabama
+   1. https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/6d2771faa9da4a2786a509d82c8cf0f7
+   2. https://alpublichealth.maps.arcgis.com/apps/opsdashboard/index.html#/2b4627aa70c5450791a7cf439ed047ec 
+2. Alaska
+   1. https://alaska-coronavirus-vaccine-outreach-alaska-dhss.hub.arcgis.com/
+   2. http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineAvailability.aspx 
+3. Arizona
+   1. https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/covid-19/dashboards/index.php
+   2. https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-find-vaccine 
+4. Arkansas
+   1. https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus
+   2. https://www.healthy.arkansas.gov/programs-services/topics/covid-19-vaccination-plan 
+5. California
+   1. https://covid19.ca.gov/state-dashboard/
+   2. https://myturn.ca.gov/ 
+6. Colorado
+   1. https://covid19.colorado.gov/data
+   2. https://covid19.colorado.gov/for-coloradans/vaccine/vaccine-for-coloradans 
+7. Connecticut
+   1. https://portal.ct.gov/coronavirus
+   2. https://portal.ct.gov/Coronavirus/COVID-19-Vaccination---Phases 
+8. Delaware
+   1. https://myhealthycommunity.dhss.delaware.gov/locations/state
+   2. https://coronavirus.delaware.gov/vaccine/where-can-i-get-my-vaccine/ 
+9. Florida
+   1. https://floridahealthcovid19.gov/
+   2. https://floridahealthcovid19.gov/vaccines/vaccine-locator/ 
+10. Georgia
+   1. https://dph.georgia.gov/covid-19-daily-status-report
+   2. https://dph.georgia.gov/covid-vaccine 
+11. Hawaii
+   1. https://health.hawaii.gov/coronavirusdisease2019/
+   2. https://hawaiicovid19.com/vaccine/ 
+12. Idaho
+   1. https://public.tableau.com/profile/idaho.division.of.public.health#!/vizhome/DPHIdahoCOVID-19Dashboard/Home
+   2. https://healthandwelfare.idaho.gov/covid-19-vaccination 
+13. Illinois
+   1. https://www.dph.illinois.gov/covid19
+   2. https://www.dph.illinois.gov/covid19/vaccine-distribution 
+14. Indiana
+   1. https://www.coronavirus.in.gov/2393.htm
+   2. https://www.coronavirus.in.gov/vaccine/ 
+15. Iowa
+   1. https://coronavirus.iowa.gov/pages/case-counts
+   2. https://coronavirus.iowa.gov/pages/vaccineinformation 
+16. Kansas
+   1. https://www.coronavirus.kdheks.gov/160/COVID-19-in-Kansas
+   2. https://www.kansasvaccine.gov/160/Find-My-Vaccine 
+17. Kentucky
+   1. https://govstatus.egov.com/kycovid19
+   2. https://govstatus.egov.com/kentucky-vaccine-survey 
+18. Louisiana
+   1. https://ldh.la.gov/Coronavirus/
+   2. https://ldh.la.gov/covidvaccine/ 
+19. Maine
+   1. https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airborne/coronavirus/data.shtml
+   2. https://www.maine.gov/covid19/vaccines 
+20. Maryland
+   1. https://coronavirus.maryland.gov/datasets/md-covid-19-data-dashboard
+   2. https://coronavirus.maryland.gov/pages/vaccine 
+21. Massachusetts
+   1. https://www.mass.gov/info-details/covid-19-response-reporting
+   2. https://www.mass.gov/info-details/massachusetts-covid-19-vaccination-phases 
+22. Michigan
+   1. https://www.michigan.gov/coronavirus/0,9753,7-406-98163_98173---,00.html
+   2. https://www.michigan.gov/coronavirus/0,9753,7-406-98178_103214_104822---,00.html 
+23. Minnesota
+   1. https://www.health.state.mn.us/diseases/coronavirus/situation.html
+   2. https://mn.gov/covid19/vaccine/index.jsp 
+24. Mississippi
+   1. https://msdh.ms.gov/msdhsite/_static/14,0,420.html#Mississippi
+   2. https://msdh.ms.gov/msdhsite/_static/14,22816,420,976.html 
+25. Missouri
+   1. https://showmestrong.mo.gov/data/public-health/
+   2. https://covidvaccine.mo.gov/ 
+26. Montana
+   1. https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusmt/demographics
+   2. https://dphhs.mt.gov/publichealth/cdepi/diseases/coronavirusmt/covid19vaccineavailability 
+27. Nebraska
+   1. https://experience.arcgis.com/experience/ece0db09da4d4ca68252c3967aa1e9dd
+   2. https://dhhs.ne.gov/Pages/COVID-19-Vaccine-Information.aspx 
+28. Nevada
+   1. https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9
+   2. https://www.immunizenevada.org/county-specific-covid-19-vaccine-plan 
+29. New Hampshire
+   1. https://www.nh.gov/covid19/
+   2. https://www.vaccines.nh.gov/ 
+30. New Jersey
+   1. https://covid19.nj.gov/
+   2. https://covid19.nj.gov/faqs/nj-information/slowing-the-spread/who-is-eligible-for-vaccination-in-new-jersey-who-is-included-in-the-vaccination-phases 
+31. New Mexico
+   1. https://cvprovider.nmhealth.org/public-dashboard.html
+   2. https://cv.nmhealth.org/covid-vaccine/ 
+32. New York
+   1. https://covid19tracker.health.ny.gov/views/NYS-COVID19-Tracker/NYSDOHCOVID-19Tracker-Map?%3Aembed=yes&%3Atoolbar=no&%3Atabs=n   
+   2. https://covid19vaccine.health.ny.gov/ 
+33. North Carolina
+   1. https://covid19.ncdhhs.gov/dashboard/cases
+   2. https://covid19.ncdhhs.gov/vaccines/find-your-spot-take-your-shot 
+34. North Dakota
+   1. https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases
+   2. https://www.health.nd.gov/covid-19-vaccine-information 
+35. Ohio
+   1. https://coronavirus.ohio.gov/wps/portal/gov/covid-19/dashboards 
+   2. https://vaccine.coronavirus.ohio.gov/ 
+36. Oklahoma
+   1. https://oklahoma.gov/covid19.html
+   2. https://oklahoma.gov/covid19/vaccine-information.html 
+37. Oregon
+   1. https://experience.arcgis.com/experience/fff9f83827c5461583cd014fdf4587de
+   2. https://www.oregon.gov/oha/covid19/Pages/vaccine-information-by-county.aspx 
+38. Pennsylvania
+   1. https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx
+   2. https://www.pa.gov/guides/get-vaccinated/ 
+39. Rhode Island
+   1. https://ri-department-of-health-covid-19-data-rihealth.hub.arcgis.com/
+   2. https://covid.ri.gov/vaccination 
+40. South Carolina
+   1. https://scdhec.gov/covid19
+   2. https://scdhec.gov/covid19/covid-19-vaccine/covid-19-vaccine-appointments 
+41. South Dakota
+   1. https://doh.sd.gov/COVID/Dashboard.aspx
+   2. https://covid.sd.gov/vaccine/default.aspx 
+42. Tennessee
+   1. https://www.tn.gov/health/cedep/ncov.html 
+   2. https://www.tn.gov/content/tn/health/cedep/ncov/covid-19-vaccine-information/getting-a-covid-19-vaccine-information.html 
+43. Texas
+   1. https://txdshs.maps.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83
+   2. https://www.dshs.texas.gov/coronavirus/immunize/vaccine/#where 
+44. Utah
+   1. https://coronavirus.utah.gov/case-counts/
+   2. https://coronavirus.utah.gov/vaccine-distribution/#eligibility 
+45. Vermont
+   1. https://www.healthvermont.gov/covid-19/current-activity/vermont-dashboard
+   2. https://www.healthvermont.gov/covid-19/vaccine/getting-covid-19-vaccine 
+46. Virginia
+   1. https://www.vdh.virginia.gov/coronavirus/covid-19-in-virginia/ 
+   2. https://vdh.jebbit.com/amkwk6m1?L=Owned+Web&JC=Vaccine 
+47. Washington
+   1. https://www.doh.wa.gov/Emergencies/COVID19/DataDashboard
+   2. https://www.doh.wa.gov/Emergencies/COVID19/vaccine 
+48. West Virginia
+   1. https://dhhr.wv.gov/COVID-19/Pages/default.aspx
+   2. https://dhhr.wv.gov/covid-19/pages/vaccine.aspx 
+49. Wisconsin
+   1. https://www.dhs.wisconsin.gov/covid-19/cases.htm 
+   2. https://www.dhs.wisconsin.gov/covid-19/vaccine-about.htm 
+50. Wyoming
+   1. https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/covid-19-state-and-county-dashboards/ 
+   2. https://health.wyo.gov/publichealth/immunization/wyoming-covid-19-vaccine-information/county-covid-19-vaccine-information/ 
+51. Washington, D.C.
+   1. https://coronavirus.dc.gov/data
+   2. https://coronavirus.dc.gov/vaccinatedc
+52. Puerto Rico
+   1. https://covidactnow.org/us/puerto_rico-pr/?s=1610554

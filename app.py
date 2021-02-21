@@ -1,4 +1,5 @@
 from flask import Flask, redirect, render_template
+from data import state_info
 
 app = Flask(__name__)
 
@@ -10,9 +11,14 @@ def index():
 def about():
   return render_template("about.html")
 
+<<<<<<< HEAD
 @app.route("/stats")
 def stats():
     return "Hello"
+=======
+@app.route("/my_state")
+def state():
+  return render_template("states.html", state_info=state_info)
 
 @app.errorhandler(404)
 def page_not_found(e):
