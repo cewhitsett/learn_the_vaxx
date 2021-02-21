@@ -4,7 +4,7 @@
     margin-top: 3rem;
     margin-bottom: 40vh;
   }
-  img {
+  .big {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -30,9 +30,11 @@
     display: inline-flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 20px;
   }
   h3 {
     display: inline-block;
+    font-size: 1.5rem;
     vertical-align: middle;
   }
   p {
@@ -57,6 +59,7 @@
   <div id="addy">
     <h1>
       <img
+        class="big"
         src="{{ url_for('static', filename='logo.png') }}"
         alt="Learn the Facts, no Vaxx"
       />
@@ -75,7 +78,7 @@
     <h2>[[info().title]]</h2>
     <p>[[allInfo[currentInfo].text]]</p>
     <figure v-if="info().pic">
-      <img v-bind:src="info().pic.url" v-bind:alt="info().pic.desc" />
+      <img class="big" v-bind:src="info().pic.url" v-bind:alt="info().pic.desc" />
       <figcaption class="figure-caption">[[info().pic.desc]]</figcaption>
     </figure>
 
