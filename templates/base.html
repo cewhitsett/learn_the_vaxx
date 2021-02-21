@@ -77,11 +77,17 @@
         font-size: 2rem;
       }
 
+      .navbar-nav {
+          width: 100%;
+      }
+
       .navbar-nav>li {
         position: relative;
-        display: block;
+        width: 100%;
+        display: inline;
         font-size: 1rem;
         visibility: visible !important;
+        float: right !important;
       }
     </style>
       {% block style %}{% endblock %}
@@ -90,10 +96,13 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="{{ url_for('index') }}">Logo???</a>
         <ul class="navbar-nav mr-auto"></ul>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse text-center">
+            <ul class="navbar-nav ml-auto float-right">
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url_for('stats') }}">Vaxx Stats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('state') }}">State Information</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url_for('about') }}">Meet the Team</a>

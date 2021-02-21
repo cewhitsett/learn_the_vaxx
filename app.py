@@ -13,7 +13,7 @@ def about():
 
 @app.route("/stats")
 def stats():
-  return "Hello"
+  return render_template("stats.html")
 
 @app.route("/my_state")
 def state():

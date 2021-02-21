@@ -1,21 +1,21 @@
 state_info = {
     "Alabama": [
-        "https://alpublichealthmapsarcgiscom/apps/opsdashboard/indexhtml#/6d2771faa9da4a2786a509d82c8cf0f7",
-        "https://alpublichealthmapsarcgiscom/apps/opsdashboard/indexhtml#/2b4627aa70c5450791a7cf439ed047ec",
+        "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/indexhtml#/6d2771faa9da4a2786a509d82c8cf0f7",
+        "https://alpublichealth.maps.arcgis.com/apps/opsdashboard/indexhtml#/2b4627aa70c5450791a7cf439ed047ec",
     ],
     "Alaska": [
-        "https://alaska-coronavirus-vaccine-outreach-alaska-dhsshubarcgiscom/",
-        "http://dhssalaskagov/dph/Epi/id/Pages/COVID-19/VaccineAvailabilityaspx",
+        "https://alaska-coronavirus-vaccine-outreach-alaska-dhss.hub.arcgis.com/",
+        "https://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/VaccineAvailability.aspx",
     ],
     "Arizona": [
-        "https://wwwazdhsgov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/covid-19/dashboards/indexphp",
-        "https://wwwazdhsgov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/indexphp#novel-coronavirus-find-vaccine",
+        "https://www.az.dhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/covid-19/dashboards/indexphp",
+        "https://www.az.dhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/indexphp#novel-coronavirus-find-vaccine",
     ],
     "Arkansas": [
-        "https://wwwhealthyarkansasgov/programs-services/topics/novel-coronavirus",
-        "https://wwwhealthyarkansasgov/programs-services/topics/covid-19-vaccination-plan",
+        "https://www.healthy.arkansas.gov/programs-services/topics/novel-coronavirus",
+        "https://www.healthy.arkansas.gov/programs-services/topics/covid-19-vaccination-plan",
     ],
-    "California": ["https://covid19cagov/state-dashboard/", "https://myturncagov/"],
+    "California": ["https://covid19.ca.gov/state-dashboard/", "https://myturn.ca.gov/"],
     "Colorado": [
         "https://covid19coloradogov/data",
         "https://covid19coloradogov/for-coloradans/vaccine/vaccine-for-coloradans",
@@ -49,8 +49,8 @@ state_info = {
         "https://wwwdphillinoisgov/covid19/vaccine-distribution",
     ],
     "Indiana": [
-        "https://wwwcoronavirusingov/2393htm",
-        "https://wwwcoronavirusingov/vaccine/",
+        "https://www.coronavirusin.gov/2393htm",
+        "https://www.coronavirusin.gov/vaccine/",
     ],
     "Iowa": [
         "https://coronavirusiowagov/pages/case-counts",
