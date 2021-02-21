@@ -27,5 +27,8 @@ def page_not_found(e):
 def internal_server_error():
   return redirect("500.html"), 500
 
+def get_states():
+  pass
+
 if __name__ == "__main__":
   app.run(debug=True)

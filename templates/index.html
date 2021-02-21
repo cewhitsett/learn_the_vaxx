@@ -66,13 +66,13 @@
   
     <div class="links" v-if="info().links">
       <h3>Various Links</h3>
-      <ol>
+      <ul>
         <li v-for="link in info().links">
           <a
             v-bind:href="link.url"
           >[[link.text]]</a>
         </li>
-      </ol>
+      </ul>
     </div>
     <div class="info-holder">
       <a

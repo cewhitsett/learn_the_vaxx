@@ -4,8 +4,17 @@ id,response,next
 2,How am I sure that the vaccine won’t give me COVID?,3
 3,"Ok, so it doesn’t seem harmful! I wanna learn more about some of my other concerns.",0
 4,"So, the vaccine works well...how was that possible if it was developed so fast?",1
-5,I’m not convinced. Let me see more facts.,-1
+5,I’m not convinced. Let me see more facts.,-4
 6,That sounds legit! I wanna learn more about some of my other concerns.,0
 7,I guess it does the job! I wanna learn more about some of my other concerns.,0
-8,Why should I actually be concerned?,-1
+8,Why should I actually be concerned?,-4
 9,"Yikes, I get it. I wanna learn more about some of my other concerns.",0
+10,,
+11,,
+12,,
+13,,
+14,The vaccine was developed so quickly...no way it’s legit.,1
+15,"The vaccine has adverse side effects, doesn’t it?",2
+16,Don’t vaccines inject you with the virus in order to trigger your immune system?,3
+17,It’s doubtful that the COVID vaccine will work well,4
+18,I’m young and/or healthy so I don’t need to get vaccinated,5
