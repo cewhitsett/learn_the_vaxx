@@ -120,7 +120,7 @@
           <h3>[[allChoices[rebutNum].text]]</h3>
         </div>
       </a>
-      <a v-if="currentInfo === 0" v-on:click="getNext(-4)">
+      <a v-if="currentInfo === 0" v-on:click="getNext('-4')">
         <div class="info">
           <img
             class="big"
@@ -144,7 +144,7 @@
     },
     methods: {
       getNext: function(info) {
-        if (info === -4) {
+        if (info === '-4' || info === -4) {
           window.location = "{{url_for('stats')}}";
         }
         this.currentInfo = info;
