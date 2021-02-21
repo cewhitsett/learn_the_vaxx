@@ -201,7 +201,7 @@ responses = {
     0: {
         "title": "Learn the Vaxx",
         "text": "Inform yourself. Protect others. Beat the virus.\nFor Black people by 4 Black people*.",
-        "choices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "choices": [0, 3],
     },
     1: {
         "title": "The vaccine was developed so quickly...no way it’s legit.",
