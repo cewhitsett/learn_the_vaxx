@@ -193,7 +193,7 @@ state_info = {
         "https://health.wyo.gov/publichealth/infectious-disease-epidemiology-unit/disease/novel-coronavirus/covid-19-state-and-county-dashboards/",
         "https://health.wyo.gov/publichealth/immunization/wyoming-covid-19-vaccine-information/county-covid-19-vaccine-information/",
     ],
-    "Washington, D": [
+    "Washington, DC": [
         "https://coronavirus.dc.gov/data",
         "https://coronavirus.dc.gov/vaccinatedc",
     ],
