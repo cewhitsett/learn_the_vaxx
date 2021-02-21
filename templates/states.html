@@ -5,10 +5,18 @@
 <div id="app">
   <h1>My State</h1>
   <p>
-    This is a resource with specific COVID-19 information for each state. Select your
+    This is a resource with specific COVID-19 information for the country and each state. Select your
     state from the dropdown and then you can choose either to browse various COVID information,
     or specific vacciation information and signup instructions.
   </p>
+
+  <a class="accent" scr="https://covid19.emory.edu/">COVID-19 Health Equity Interactive Dashboard</a>
+  <br>
+  <a class="accent" scr="https://www.cdc.gov/coronavirus/2019-ncov/communication/guidance.html">CDC COVID-19 Guidance</a>
+  <br>
+  <a class="accent" scr="https://covidtracking.com/ ">The COVID Tracking Project</a>
+  <br>
+
   <label for="states">Choose your state or territory from the list:</label>
   <input v-model="state" list="states" name="state" id="state">
   <datalist id="states">
