@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="{{url_for('static', filename='styles.css')}}"
     />
+    <link rel="icon" href="{{url_for('static', filename='favicon.png')}}" sizes="32x32" type="image/png"> (1 size)
     <title>Learn The Vaxx</title>
 
     <style>
@@ -91,12 +92,19 @@
         visibility: visible !important;
         float: right !important;
       }
+      .nav-image {
+        height: 100%;
+        max-height: 80px;
+        width: auto;
+      }
     </style>
       {% block style %}{% endblock %}
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="{{ url_for('index') }}">Logo???</a>
+        <a class="navbar-brand" href="{{ url_for('index') }}">
+          <img class="navbar-brand nav-image" src="{{url_for('static', filename='favicon.png')}}"/>
+        </a>
         <ul class="navbar-nav mr-auto"></ul>
         <div class="collapse navbar-collapse text-center">
             <ul class="navbar-nav ml-auto float-right">
