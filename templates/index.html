@@ -45,17 +45,21 @@
 {% endblock %} {% block body %}
 <div id="app">
   <div id="addy">
-    <h1><img src="{{ url_for('static', filename='logo.png') }}" alt="Learn the Facts, no Vaxx"/></h1>
-    <a class="accent" href="#adventure">My COVID Adventure</a>
+    <h1>
+      <img
+        src="{{ url_for('static', filename='logo.png') }}"
+        alt="Learn the Facts, no Vaxx"
+      />
+    </h1>
     <p>
       Inform yourself. Protect others. Beat the virus.<br />
       For Black people, by 4 Black people*.
     </p>
     <p>
-      <a class="accent" href="#adventure">Start your COVID Vaxx Adventure</a>
+      <a class="accent" href="#adventure">Start learning about the Vaxx</a>
     </p>
   </div>
-  
+
   <div id="chooser" class="chooser">
     <a name="adventure"></a>
     <h2>[[info().title]]</h2>
