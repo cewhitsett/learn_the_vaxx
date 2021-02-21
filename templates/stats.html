@@ -25,7 +25,7 @@ td>a {
 	<td>{{ stat['info'] }}</td>
 	<td>
 	{% if not (stat['link'] == 'Link' or stat['link'] == 'nan') %}
-	<a href="{{ stat['info'] }}">Source</a>
+	<a href="{{ stat['link'] }}" target="_blank">Source</a>
 	{% endif %}
 	</td>
     </tr>

@@ -1,11 +1,11 @@
 ID,Number,Info,Picture,Source
-0,10%,Percentage of Black Americans who had heart disease in 2017,,Link
-1,38%,Percentage of Black Americans who are obese,,Link
-2,300% to 400%,Black women are 3 to 4 times as likely to die during child birth compared to white women,,
-3,42%,Percentage by which African Americans are more likely to have asthma compared to white Americans,,
+0,10%,Percentage of Black Americans who had heart disease in 2017,,https://www.cdc.gov/nchs/hus/spotlight/HeartDiseaseSpotlight_2019_0404.pdf
+1,38%,Percentage of Black Americans who are obese,,"https://www.cdc.gov/pcd/issues/2019/18_0579.htm#:~:text=Combined%20data%20for%202015%20through,Hispanic%20white%20adults%20(28.6%25)."
+2,300% to 400%,Black women are 3 to 4 times as likely to die during child birth compared to white women,,https://www.cdc.gov/media/releases/2019/p0905-racial-ethnic-disparities-pregnancy-deaths.html
+3,42%,Percentage by which African Americans are more likely to have asthma compared to white Americans,,https://www.lung.org/research/trends-in-lung-disease/asthma-trends-brief/current-demographics
 4,300%,Black Americns are 3 times as likely to die from Covid than white Americans,,https://www.medicalnewstoday.com/articles/racial-inequalities-in-covid-19-the-impact-on-black-communities#Making-sense-of-incomplete-data
-5,95%,Efficacy of Pfizer vaccine,,
-6,94%,Efficacy of Moderna vaccine,,
-7,21,Number of days between subsequent doses of the Pfizer vaccine,,
-8,28,Number of days between subsequent doses of the Moderna vaccine,,
-9,10%,Percentage of clinical trial participants who were African American,,
+5,95%,Efficacy of Pfizer vaccine,,https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html
+6,94%,Efficacy of Moderna vaccine,,https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Moderna.html
+7,21,Number of days between subsequent doses of the Pfizer vaccine,,https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html
+8,28,Number of days between subsequent doses of the Moderna vaccine,,https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Moderna.html
+9,10%,Percentage of clinical trial participants who were African American,,"https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Moderna.html, https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html"
