@@ -202,14 +202,14 @@ state_info = {
 
 responses = {
     0: {
-        "title": "What's your concern about the Vaxx?",
+        "title": "What's your concern about the COVID-19 Vaxx?",
         "text": "Select one of your concerns below.",
         "choices": [10, 11, 12, 13, 14],
     },
     1: {
         "title": "The vaccine was developed so quickly...no way it’s legit.",
         "text": "Considering that vaccines usually take 10-15 years to develop and these vaccines only took a couple of months, we get that! But, here’s the facts: No steps were skipped in the development process of the vaccine because scientists were able to leverage pre-existing technology. And in fact, the Moderna vaccine has been proven 94% effective and the Pfizer vaccines 95% effective.",
-        "choices": [0, 1],
+        "choices": [0, 1, 6],
         "links": [
             {
                 "url": "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Moderna.html",
@@ -234,12 +234,12 @@ responses = {
     },
     3: {
         "title": "Don’t vaccines inject you with the virus in order to trigger your immune system?",
-        "text": "There are different kinds of vaccines. The kind you’re thinking of is called a live attenuated vaccine. These vaccines inject a weaker, asymptomatic form of the virus into your body, but won’t make you sick.\nHowever the Pfizer and Moderna COVID vaccines are mRNA vaccines, a new kind of vaccine that has been in development for many years. The mRNA vaccine does not introduce the virus into your body. It instead gives your cells instructions to make a “spike protein” like the one found in the virus. Your body will recognize these spike proteins as foreign and create an immune response to get rid of them, so if it recognizes any new spike proteins being introduced to your body--the coronavirus--it will protect you against having a serious reaction! \nAnd if you’re worried about the vaccine altering your DNA, don’t! It does not go to the nucleus of your cells so it doesn’t affect your DNA at all. The mRNA is destroyed after it does its job.",
+        "text": "There are different kinds of vaccines. The kind you’re thinking of is called a live attenuated vaccine. These vaccines inject a weaker, asymptomatic form of the virus into your body, but won’t make you sick.\nHowever the Pfizer and Moderna COVID vaccines are mRNA vaccines, a new kind of vaccine that has been in development for many years.\nThe mRNA vaccine does not introduce the virus into your body. It instead gives your cells instructions to make a “spike protein” like the one found in the virus. Your body will recognize these spike proteins as foreign and create an immune response to get rid of them, so if it recognizes any new spike proteins being introduced to your body--the coronavirus--it will protect you against having a serious reaction! \nAnd if you’re worried about the vaccine altering your DNA, don’t! It does not go to the nucleus of your cells so it doesn’t affect your DNA at all. The mRNA is destroyed after it does its job.",
         "choices": [5, 6],
     },
     4: {
-        "title": "It’s doubtful that the COVID vaccine will work well.",
-        "text": "We get this concern because the vaccine was developed only a couple of months and both the Pfizer and Moderna vaccines hover ~95% effective! But take a look at this number in comparison to some other familiar vaccines:Moderna - 94% effective, Pfizer - 95% effective, DTAP (Pertussis/Whooping Cough) - 80-90% effective, Variella (chickenpox) - 82% effective, MCV4, MPSV4 and MenB (Meningococcal disease) - 85-90%. Plus, the vaccine will be most effective if people get it!",
+        "title": "It’s doubtful that the vaccine will work well.",
+        "text": "We get this concern because the vaccine was developed only a couple of months and both the Pfizer and Moderna vaccines hover ~95% effective! But take a look at this number in comparison to some other familiar vaccines: Moderna - 94% effective, Pfizer - 95% effective, DTAP (Pertussis/Whooping Cough) - 80-90% effective, Variella (chickenpox) - 82% effective, MCV4, MPSV4 and MenB (Meningococcal disease) - 85-90%. Plus, the vaccine will be most effective if people get it!",
         "choices": [4, 7],
     },
     5: {
