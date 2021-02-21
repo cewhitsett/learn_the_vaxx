@@ -1,8 +1,8 @@
-{% extends "base.html" %}
-{% block style %}
+{% extends "base.html" %} {% block style %}
 <style>
   .chooser {
     margin-top: 3rem;
+    margin-bottom: 40vh;
   }
   img {
     display: block;
@@ -35,53 +35,53 @@
     display: inline-block;
     vertical-align: middle;
   }
+  p {
+    text-align: center;
+  }
+  #addy {
+    margin-bottom: 100vh;
+  }
 </style>
-{% endblock %}
-{% block body %}
+{% endblock %} {% block body %}
 <div id="app">
-  <h1><img src="{{ url_for('static', filename='logo.png') }}" alt="Learn the Facts, no Vaxx"/></h1>
-  <a class="accent" href="#adventure">My COVID Adventure</a>
-  <p>
-    Due to widespread misinformation about COVID-19 and the historical mistreatment
-    of the Black community by medical treatments strongly stemming from events like
-    the Tuskegee Syphilis Study, there exists a hesitancy within the Black community
-    to take the Pfizer and Moderna vaccines. In the effort to address this hesitancy,
-    we will create Learn the Vaxx, a website dedicated to dismantling the
-    misconceptions that members of the Black community harbor about the COVID-19
-    vaccine.
-  </p>
+  <div id="addy">
+    <h1><img src="{{ url_for('static', filename='logo.png') }}" alt="Learn the Facts, no Vaxx"/></h1>
+    <a class="accent" href="#adventure">My COVID Adventure</a>
+    <p>
+      Inform yourself. Protect others. Beat the virus.<br />
+      For Black people, by 4 Black people*.
+    </p>
+    <p>
+      <a class="accent" href="#adventure">Start your COVID Vaxx Adventure</a>
+    </p>
+  </div>
+  
   <div id="chooser" class="chooser">
     <a name="adventure"></a>
     <h2>[[info().title]]</h2>
-    <p>
-      [[allInfo[currentInfo].text]]
-    </p>
+    <p>[[allInfo[currentInfo].text]]</p>
     <figure v-if="info().pic">
-      <img
-        v-bind:src="info().pic.url"
-        v-bind:alt="info().pic.desc"
-      />
+      <img v-bind:src="info().pic.url" v-bind:alt="info().pic.desc" />
       <figcaption class="figure-caption">[[info().pic.desc]]</figcaption>
     </figure>
-  
+
     <div class="links" v-if="info().links">
       <h3>Various Links</h3>
       <ul>
         <li v-for="link in info().links">
-          <a
-            v-bind:href="link.url"
-          >[[link.text]]</a>
+          <a v-bind:href="link.url">[[link.text]]</a>
         </li>
       </ul>
     </div>
     <div class="info-holder">
       <a
-      v-for="rebutNum in allInfo[currentInfo].choices"
-      v-on:click="getNext(allChoices[rebutNum].next)">
-      <div class="info">
-        <h3>[[allChoices[rebutNum].text]]</h3>
-      </div>
-    </a>
+        v-for="rebutNum in allInfo[currentInfo].choices"
+        v-on:click="getNext(allChoices[rebutNum].next)"
+      >
+        <div class="info">
+          <h3>[[allChoices[rebutNum].text]]</h3>
+        </div>
+      </a>
     </div>
   </div>
 </div>
