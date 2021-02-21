@@ -1,1 +1,99 @@
 {% extends "base.html" %}
+
+{% block body %}
+<div id="app">
+  <h1>[[title]]</h1>
+  <p>
+    Due to widespread misinformation about COVID-19 and the historical mistreatment of the Black community by medical treatments strongly stemming from events like the Tuskegee Syphilis Study, there exists a hesitancy within the Black community to take the Pfizer and Moderna vaccines. In the effort to address this hesitancy, we will create Learn the Vaxx, a website dedicated to dismantling the misconceptions that members of the Black community harbor about the COVID-19 vaccine.
+  </p>
+  <div>
+    <h2>[[info().title]]</h2>
+    <p>
+      [[allInfo[currentInfo].text]]
+    </p>
+    <img
+      v-if="info().pic"
+      v-bind:src="info().pic.url"
+      v-bind:alt="info().pic.desc"
+    />
+    <a
+      v-if="info().link"
+      v-bind:href="info().link.url"
+    >[[info().link.text]]</a>
+
+    <div class="info-holder">
+      <a 
+        v-for="rebutNum in allInfo[currentInfo].choices"
+        v-on:click="getNext(allChoices[rebutNum].next)">
+        <div class="info">
+          <h3>[[allChoices[rebutNum].text]]</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      title: 'Learn The Vaxx',
+      currentInfo: 0,
+      allInfo: {
+        0: {
+          title: 'Why You Should Eat Sweet Potato Pie',
+          text: "SPP Is the best pie, and it's healthy.",
+          pic: {
+            url: "https://images-gmi-pmc.edge-generalmills.com/165f3d2f-0610-40a6-abf8-478fb850be7c.jpg",
+            desc: "A picture of pie!"
+          },
+          link: {
+            url: "https://en.wikipedia.org/wiki/Pumpkin_pie",
+            text: "Wikipedia"
+          },
+          choices: [0,1]
+        },
+        1: {
+          title: 'Pumpkin Pie is Easy to Make',
+          text: 'It only needs three ingredients!',
+          choices: [0,1,2]
+        },
+        2: {
+          title: 'Sorry',
+          text: "We're sorry we couldn't help you. Here's some other resources for you:",
+          choices: []
+        },
+      },
+      allChoices: {
+        0: {
+          text: "That makes sense to me! Let me get some...",
+          next: 0
+        },
+        1: {
+          text: "Hmm, I still don't know...",
+          next: 1
+        },
+        2: {
+          text: "That's absurd, that doesn't make sense.",
+          next: 2
+        },
+      }
+    },
+    methods: {
+      getNext: function(info) {
+        this.currentInfo = info;
+      },
+      info: function() {
+        return this.allInfo[this.currentInfo];
+      }
+    },
+    delimiters: ["[[","]]"]
+  })
+</script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+  crossorigin="anonymous"
+></script>
+{% endblock %}

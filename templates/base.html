@@ -19,6 +19,7 @@
     <style>
       body {
         text-align: center;
+        font-size: 2rem;
       }
       @keyframes bounceIn {
         0% {
@@ -39,85 +40,15 @@
         max-width: 500px;
         margin-right: 1.5rem;
         height: 500px;
+        overflow-y: scroll;
         display: inline-block;
 
         animation: bounceIn 1s;
       }
     </style>
+      {% block style %}{% endblock %}
   </head>
   <body>
-    <div id="app">
-      <h1>[[title]]</h1>
-
-      <div class="info-holder">
-        <infographic
-          v-for="itemNum in currentInfo"
-          v-bind:info="allInfo[itemNum]"
-          v-bind:key="itemNum"
-        ></infographic>
-      </div>
-    </div>
-
-    <script>
-      Vue.component('infographic', {
-        props: ['info'],
-        delimiters: ["[[","]]"],
-        methods: {
-          getNext: function(info) {
-            this.$parent.getNext(info);
-          }
-        },
-        template:  `
-          <a v-on:click="getNext(info)">
-            <div class="info">
-              <h2>[[info.title]]</h2>
-              <p>[[info.text]]</p>
-            </div>
-          </a>
-        `,
-      })
-
-      var app = new Vue({
-        el: '#app',
-        data: {
-          title: 'Learn The Vaxx',
-          currentInfo: [0],
-          allInfo: {
-            0: {
-              title: 'Title 0',
-              text: 'Ciante',
-              next: [1,2]
-            },
-            1: {
-              title: 'Title 1',
-              text: 'Camille',
-              next: [3]
-            },
-            2: {
-              title: 'Title 2',
-              text: 'Hannah',
-              next: [3]
-            },
-            3: {
-              title: 'Title 3',
-              text: 'Lorelei',
-              next: [0]
-            }
-          }
-        },
-        methods: {
-          getNext: function(info) {
-            this.currentInfo = info.next;
-          }
-        },
-        delimiters: ["[[","]]"]
-      })
-    </script>
-    
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
+    {% block body %}{% endblock %}
   </body>
 </html>

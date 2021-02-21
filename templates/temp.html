@@ -1,0 +1,54 @@
+Vue.component('infographic', {
+  props: ['info'],
+  delimiters: ["[[","]]"],
+  methods: {
+    getNext: function(info) {
+      this.$parent.getNext(info);
+    },
+    allChoices: function() {
+      console.log("hey");
+      return this.$parent.allChoices;
+    }
+  },
+  template:  `
+    <div>
+      <h2>[[info.title]]</h2>
+      <p>
+        [[info.text]]
+      </p>
+      <img
+        v-if="info.pic"
+        v-bind:src="info.pic.url"
+        v-bind:alt="info.pic.desc"
+      />
+      <a
+        v-if="info.link"
+        v-bind:href="info.link.url"
+      >[[info.link.text]]</a>
+
+      <a 
+        v-for="rebutNum in choices"
+        v-on:click="getNext(info)">
+        <div class="info">
+          <h3>[[info.text]]</h3>
+        </div>
+      </a>
+    </div>
+  `,
+})
+Vue.component('rebuttal', {
+  props: ['info'],
+  delimiters: ["[[","]]"],
+  methods: {
+    getNext: function(info) {
+      this.$parent.getNext(info);
+    }
+  },
+  template:  `
+    <a v-on:click="getNext(info)">
+      <div class="info">
+        <h3>[[info.text]]</h3>
+      </div>
+    </a>
+  `,
+})
