@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block style %}
+{% endblock %}
+{% block body %}
+<div id="app">
+  <h1>My State</h1>
+  <p>
+    This is a resource with specific COVID-19 information for each state. Select your
+    state from the dropdown and then you can choose either to browse various COVID information,
+    or specific vacciation information and signup instructions.
+  </p>
+  <label for="states">Choose your state from the list:</label>
+  <input v-model="state" list="states" name="state" id="state">
+  <datalist id="states">
+    <option
+      v-for="(urls, place) in stateInfo"
+      v-bind:value="place"></option>
+  </datalist>
+  <hr>
+  <a v-if="general" class="accent" v-bind:href="general">General State Information for [[state]]</a>
+  <br>
+  <a v-if="vaccine" class="accent" v-bind:href="vaccine">Vaccine State Information for [[state]]</a>
+</div>
+
+<script>
+  var app = new Vue({
+    el: "#app",
+    data: {
+      state: "",
+      general: "",
+      vaccine: "",
+      stateInfo: {{ state_info | tojson }}
+    },
+    methods: {
+      keys: function() {
+        var values = Object.keys(this.stateInfo);
+        for (var i=0; i<values.length; i++) {
+          values[i] = values[i].toLowerCase();
+        }
+
+        return values;
+      }
+    },
+    watch: {
+      state: function() {
+        var index = this.keys().indexOf(this.state.trim().toLowerCase());
+        if (index != -1) {
+          this.general = this.stateInfo[Object.keys(this.stateInfo)[index]][0];
+          this.vaccine = this.stateInfo[Object.keys(this.stateInfo)[index]][1];
+        }
+      }
+    },
+    delimiters: ["[[","]]"],
+  });
+</script>
+{% endblock %}
