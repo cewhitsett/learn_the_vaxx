@@ -4,6 +4,11 @@
     margin-top: 3rem;
     margin-bottom: 40vh;
   }
+  #main-img {
+    margin-top: 50px;
+    max-width: none;
+    max-height: none;
+  }
   .big {
     display: block;
     margin-left: auto;
@@ -68,6 +73,7 @@
     <h1>
       <img
         class="big"
+        id="main-img"
         src="{{ url_for('static', filename='logo.png') }}"
         alt="Learn the Facts, no Vaxx"
       />
