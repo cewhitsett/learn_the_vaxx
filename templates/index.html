@@ -1,34 +1,87 @@
 {% extends "base.html" %}
-
+{% block style %}
+<style>
+  .chooser {
+    margin-top: 3rem;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 500px;
+    max-height: 40vh;
+  }
+  figure {
+    width: 100%;
+  }
+  figcaption {
+    text-align: center;
+  }
+  .links {
+    max-width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .info-holder {
+    text-align: center;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  h3 {
+    display: inline-block;
+    vertical-align: middle;
+  }
+</style>
+{% endblock %}
 {% block body %}
 <div id="app">
   <h1>[[title]]</h1>
+  <a class="accent" href="#adventure">My COVID Adventure</a>
   <p>
-    Due to widespread misinformation about COVID-19 and the historical mistreatment of the Black community by medical treatments strongly stemming from events like the Tuskegee Syphilis Study, there exists a hesitancy within the Black community to take the Pfizer and Moderna vaccines. In the effort to address this hesitancy, we will create Learn the Vaxx, a website dedicated to dismantling the misconceptions that members of the Black community harbor about the COVID-19 vaccine.
+    Due to widespread misinformation about COVID-19 and the historical mistreatment
+    of the Black community by medical treatments strongly stemming from events like
+    the Tuskegee Syphilis Study, there exists a hesitancy within the Black community
+    to take the Pfizer and Moderna vaccines. In the effort to address this hesitancy,
+    we will create Learn the Vaxx, a website dedicated to dismantling the
+    misconceptions that members of the Black community harbor about the COVID-19
+    vaccine.
   </p>
-  <div>
+  <div id="chooser" class="chooser">
+    <a name="adventure"></a>
     <h2>[[info().title]]</h2>
     <p>
       [[allInfo[currentInfo].text]]
     </p>
-    <img
-      v-if="info().pic"
-      v-bind:src="info().pic.url"
-      v-bind:alt="info().pic.desc"
-    />
-    <a
-      v-if="info().link"
-      v-bind:href="info().link.url"
-    >[[info().link.text]]</a>
-
+    <figure v-if="info().pic">
+      <img
+        v-bind:src="info().pic.url"
+        v-bind:alt="info().pic.desc"
+      />
+      <figcaption class="figure-caption">[[info().pic.desc]]</figcaption>
+    </figure>
+  
+    <div class="links" v-if="info().links">
+      <h3>Various Links</h3>
+      <ol>
+        <li v-for="link in info().links">
+          <a
+            v-bind:href="link.url"
+          >[[link.text]]</a>
+        </li>
+      </ol>
+    </div>
     <div class="info-holder">
-      <a 
-        v-for="rebutNum in allInfo[currentInfo].choices"
-        v-on:click="getNext(allChoices[rebutNum].next)">
-        <div class="info">
-          <h3>[[allChoices[rebutNum].text]]</h3>
-        </div>
-      </a>
+      <a
+      v-for="rebutNum in allInfo[currentInfo].choices"
+      v-on:click="getNext(allChoices[rebutNum].next)">
+      <div class="info">
+        <h3>[[allChoices[rebutNum].text]]</h3>
+      </div>
+    </a>
     </div>
   </div>
 </div>
@@ -47,10 +100,10 @@
             url: "https://images-gmi-pmc.edge-generalmills.com/165f3d2f-0610-40a6-abf8-478fb850be7c.jpg",
             desc: "A picture of pie!"
           },
-          link: {
+          links: [{
             url: "https://en.wikipedia.org/wiki/Pumpkin_pie",
             text: "Wikipedia"
-          },
+          }],
           choices: [0,1]
         },
         1: {
@@ -82,6 +135,9 @@
     methods: {
       getNext: function(info) {
         this.currentInfo = info;
+        setTimeout(function(){
+          document.querySelector("#chooser").scrollIntoView({ behavior: "smooth" });
+        }, 100);
       },
       info: function() {
         return this.allInfo[this.currentInfo];
