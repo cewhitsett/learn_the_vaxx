@@ -20,18 +20,95 @@
       body {
         text-align: center;
       }
+      @keyframes bounceIn {
+        0% {
+          transform: scale(0.1);
+          opacity: 0;
+        }
+        60% {
+          transform: scale(1.2);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      .info {
+        border: 3px solid black;
+        width: 25%;
+        max-width: 500px;
+        margin-right: 1.5rem;
+        height: 500px;
+        display: inline-block;
+
+        animation: bounceIn 1s;
+      }
     </style>
   </head>
   <body>
     <div id="app">
       <h1>[[title]]</h1>
+
+      <div class="info-holder">
+        <infographic
+          v-for="itemNum in currentInfo"
+          v-bind:info="allInfo[itemNum]"
+          v-bind:key="itemNum"
+        ></infographic>
+      </div>
     </div>
 
     <script>
+      Vue.component('infographic', {
+        props: ['info'],
+        delimiters: ["[[","]]"],
+        methods: {
+          getNext: function(info) {
+            this.$parent.getNext(info);
+          }
+        },
+        template:  `
+          <a v-on:click="getNext(info)">
+            <div class="info">
+              <h2>[[info.title]]</h2>
+              <p>[[info.text]]</p>
+            </div>
+          </a>
+        `,
+      })
+
       var app = new Vue({
         el: '#app',
         data: {
-          title: 'Learn The Vaxx'
+          title: 'Learn The Vaxx',
+          currentInfo: [0],
+          allInfo: {
+            0: {
+              title: 'Title 0',
+              text: 'Ciante',
+              next: [1,2]
+            },
+            1: {
+              title: 'Title 1',
+              text: 'Camille',
+              next: [3]
+            },
+            2: {
+              title: 'Title 2',
+              text: 'Hannah',
+              next: [3]
+            },
+            3: {
+              title: 'Title 3',
+              text: 'Lorelei',
+              next: [0]
+            }
+          }
+        },
+        methods: {
+          getNext: function(info) {
+            this.currentInfo = info.next;
+          }
         },
         delimiters: ["[[","]]"]
       })
