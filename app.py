@@ -1,5 +1,6 @@
 from flask import Flask, redirect, render_template
 from data import state_info, responses, reactions
+from stats import stats_info
 
 app = Flask(__name__)
 
@@ -13,7 +14,7 @@ def about():
 
 @app.route("/stats")
 def stats():
-  return render_template("stats.html")
+  return render_template("stats.html", stats=stats_info)
 
 @app.route("/my_state")
 def state():
