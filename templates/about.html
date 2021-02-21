@@ -2,12 +2,35 @@
 {% block style %}
 <style>
   img {
-    width: 25%;
+    width: 100%;
     min-width: 200px;
-    margin-bottom: 2rem;
   }
-  .accent {
-    color: goldenrod;
+  .about {
+    width: 100%;
+  }
+  @keyframes stutter {
+    0% {
+      transform: translateX(-30px);
+      opacity: 0;
+    }
+    25% {
+      transform: translateX(10px);
+    }
+    50% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  figure {
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: stutter 2s;
   }
 </style>
 {% endblock %}
@@ -18,10 +41,10 @@
     We are a group of past and present Harvey Mudd students who devised this project as 
     a part of the
     <a class="accent" href="https://sites.google.com/view/hack4blacklives/home?authuser=0">
-      Hack 4 Black Lives
-    </a>
+      Hack 4 Black Lives</a>
+
     hackathon put on by students at the Claremont colleges.
-    It was an event to 
+    It was an event to:
 
     <blockquote>
       "challenge to practice active anti-racism by focusing your
@@ -43,19 +66,34 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/220px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg" class="rounded mx-auto d-block" alt="marky">
+        <figure>
+          <img src="{{url_for('static', filename='camille.jpg')}}" alt="A headshot of the beautiful Camille." class="rounded mx-auto d-block" alt="marky">
+          <figcaption>Camille</figcaption>
+        </figure>
       </div>
       <div class="col-sm-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/220px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg" class="rounded mx-auto d-block" alt="marky">
+        <figure>
+          <img src="{{url_for('static', filename='ciante.jpg')}}" alt="A headshot of the beautiful Ciante,." class="rounded mx-auto d-block" alt="marky">
+          <figcaption>Ciante</figcaption>
+        </figure>
       </div>
       <div class="col-sm-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/220px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg" class="rounded mx-auto d-block" alt="marky">
+        <figure>
+          <img src="{{url_for('static', filename='elijah.jpg')}}" alt="A headshot of the beautiful Elijah." class="rounded mx-auto d-block" alt="marky">
+          <figcaption>Elijah</figcaption>
+        </figure>
       </div>
       <div class="col-sm-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/220px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg" class="rounded mx-auto d-block" alt="marky">
+        <figure>
+          <img src="{{url_for('static', filename='hannah.jpg')}}" alt="A headshot of the beautiful Hannah." class="rounded mx-auto d-block" alt="marky">
+          <figcaption>Hannah</figcaption>
+        </figure>
       </div>
       <div class="col-sm-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/220px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg" class="rounded mx-auto d-block" alt="marky">
+        <figure>
+          <img src="{{url_for('static', filename='lori.jpg')}}" alt="A headshot of the beautiful Lorelei." class="rounded mx-auto d-block" alt="marky">
+          <figcaption>Lorelei</figcaption>
+        </figure>
       </div>
     </div>
   </div>

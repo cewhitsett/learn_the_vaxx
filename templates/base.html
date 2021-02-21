@@ -17,9 +17,25 @@
     <title>Learn The Vaxx</title>
 
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
       body {
+        text-align:left;
+        font-size: 1.5rem;
+      }
+      h1, h2, h3, h4, h5, h6 {
         text-align: center;
-        font-size: 2rem;
+      }
+      blockquote {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 300px;
+        width: 50%;
+        text-align: justify;
+      }
+      .accent {
+        color: goldenrod;
       }
       @keyframes bounceIn {
         0% {
@@ -35,20 +51,29 @@
         }
       }
       .info {
-        border: 3px solid black;
-        width: 25%;
-        max-width: 500px;
-        margin-right: 1.5rem;
-        height: 500px;
+        border: 3px solid goldenrod;
+        border-radius: 20px;
+        width: 300px;
+        height: 300px;
+        max-height: 25vh;
+        margin-bottom: 1rem;
         overflow-y: scroll;
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         animation: bounceIn 1s;
+      }
+      .main {
+        max-width: 1140px;
+        width: 100%;
       }
     </style>
       {% block style %}{% endblock %}
   </head>
   <body>
-    {% block body %}{% endblock %}
+    <div class="main container">
+      {% block body %}{% endblock %}
+    </div>
   </body>
 </html>
