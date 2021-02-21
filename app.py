@@ -11,11 +11,9 @@ def index():
 def about():
   return render_template("about.html")
 
-<<<<<<< HEAD
 @app.route("/stats")
 def stats():
     return "Hello"
-=======
 @app.route("/my_state")
 def state():
   return render_template("states.html", state_info=state_info)
