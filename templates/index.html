@@ -45,6 +45,9 @@
     width: 100%;
     font-size: 1rem;
   }
+  li {
+    list-style: none;
+  }
   #addy {
     margin-bottom: 100vh;
   }
@@ -70,24 +73,32 @@
       />
     </h1>
     <p>
-      <strong>Inform</strong> yourself. <strong>Protect</strong> others. <strong>Beat</strong> the virus.<br />
+      <strong>Inform</strong> yourself. <strong>Protect</strong> others.
+      <strong>Beat</strong> the virus.<br />
       For Black people, by 4 Black people*.
     </p>
     <p>
-      <a class="accent" href="#adventure">Start learning about the Vaxx</a>
+      <a class="accent" href="#adventure"
+        >Start learning about the COVID-19 Vaxx</a
+      >
     </p>
   </div>
   <div id="chooser" class="chooser">
     <a name="adventure" id="adventure"></a>
     <h2>[[info().title]]</h2>
+    <br />
+
     <p>[[allInfo[currentInfo].text]]</p>
     <figure v-if="info().pic">
-      <img class="big" v-bind:src="info().pic.url" v-bind:alt="info().pic.desc" />
+      <img
+        class="big"
+        v-bind:src="info().pic.url"
+        v-bind:alt="info().pic.desc"
+      />
       <figcaption class="figure-caption">[[info().pic.desc]]</figcaption>
     </figure>
 
     <div class="links" v-if="info().links">
-      <h3>Various Links</h3>
       <ul>
         <li v-for="link in info().links">
           <a v-bind:href="link.url">[[link.text]]</a>
@@ -103,10 +114,7 @@
           <h3>[[allChoices[rebutNum].text]]</h3>
         </div>
       </a>
-      <a
-        v-if="currentInfo === 0"
-        v-on:click="getNext(-4)"
-      >
+      <a v-if="currentInfo === 0" v-on:click="getNext(-4)">
         <div class="info">
           <img
             class="big"
