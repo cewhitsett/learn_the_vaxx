@@ -92,45 +92,8 @@
     data: {
       title: 'Learn The Vaxx',
       currentInfo: 0,
-      allInfo: {
-        0: {
-          title: 'Why You Should Eat Sweet Potato Pie',
-          text: "SPP Is the best pie, and it's healthy.",
-          pic: {
-            url: "https://images-gmi-pmc.edge-generalmills.com/165f3d2f-0610-40a6-abf8-478fb850be7c.jpg",
-            desc: "A picture of pie!"
-          },
-          links: [{
-            url: "https://en.wikipedia.org/wiki/Pumpkin_pie",
-            text: "Wikipedia"
-          }],
-          choices: [0,1]
-        },
-        1: {
-          title: 'Pumpkin Pie is Easy to Make',
-          text: 'It only needs three ingredients!',
-          choices: [0,1,2]
-        },
-        2: {
-          title: 'Sorry',
-          text: "We're sorry we couldn't help you. Here's some other resources for you:",
-          choices: []
-        },
-      },
-      allChoices: {
-        0: {
-          text: "That makes sense to me! Let me get some...",
-          next: 0
-        },
-        1: {
-          text: "Hmm, I still don't know...",
-          next: 1
-        },
-        2: {
-          text: "That's absurd, that doesn't make sense.",
-          next: 2
-        },
-      }
+      allInfo: {{ responses | tojson }},
+      allChoices: {{ reactions | tojson }}
     },
     methods: {
       getNext: function(info) {

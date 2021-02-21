@@ -1,11 +1,11 @@
 from flask import Flask, redirect, render_template
-from data import state_info
+from data import state_info, responses, reactions
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-  return render_template("index.html")
+  return render_template("index.html",responses=responses, reactions=reactions)
 
 @app.route("/about")
 def about():

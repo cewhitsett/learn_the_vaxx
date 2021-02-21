@@ -1,0 +1,11 @@
+id,response,next
+0,"Hmm, I get it’s effective, but how do I know if it’s harmful?",1
+1,"Actually, I don’t get why I should be concerned about contracting COVID.",4
+2,How am I sure that the vaccine won’t give me COVID?,3
+3,"Ok, so it doesn’t seem harmful! I wanna learn more about some of my other concerns.",0
+4,"So, the vaccine works well...how was that possible if it was developed so fast?",1
+5,I’m not convinced. Let me see more facts.,-1
+6,That sounds legit! I wanna learn more about some of my other concerns.,0
+7,I guess it does the job! I wanna learn more about some of my other concerns.,0
+8,Why should I actually be concerned?,-1
+9,"Yikes, I get it. I wanna learn more about some of my other concerns.",0
