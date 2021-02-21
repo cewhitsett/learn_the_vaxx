@@ -200,54 +200,100 @@ state_info = {
     "Puerto Rico": ["https://covidactnow.org/us/puerto_rico-pr/?s=1610554"],
 }
 
-responses = {0: {'title': "What's your concern about the Vaxx?",
-  'text': 'Select one of your concerns below.',
-  'choices': [10, 11, 12, 13, 14, 15]},
- 1: {'title': 'The vaccine was developed so quickly...no way it’s legit.',
-  'text': 'Considering that vaccines usually take 10-15 years to develop and these vaccines only took a couple of months, we get that! But, here’s the facts: No steps were skipped in the development process of the vaccine because scientists were able to leverage pre-existing technology. And in fact, the Moderna vaccine has been proven 94% effective and the Pfizer vaccines 95% effective.',
-  'choices': [0, 1],
-  'links': [{'url': 'https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Moderna.html',
-    'text': 'More about Moderna'},
-   {'url': 'https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html',
-    'text': 'More About Pfizer'}]},
- 2: {'title': 'The vaccine has adverse side effects, doesn’t it?',
-  'text': 'True! There definitely have been some observable side effects. But, it’s normal to have side effects from a vaccine. You likely experienced pain after receiving your required school immunizations. You may have even felt tired or feverish. The COVID vaccine has similar side effects, but like other vaccines, they don’t last long. Visit the CDC website for more information.',
-  'choices': [3, 0],
-  'links': [{'url': 'https://www.cdc.gov/coronavirus/2019-ncov/vaccines/expect/after.html',
-    'text': 'What To Expect'}]},
- 3: {'title': 'Don’t vaccines inject you with the virus in order to trigger your immune system?',
-  'text': 'There are different kinds of vaccines. The kind you’re thinking of is called a live attenuated vaccine. These vaccines inject a weaker, asymptomatic form of the virus into your body, but won’t make you sick.\nHowever the Pfizer and Moderna COVID vaccines are mRNA vaccines, a new kind of vaccine that has been in development for many years. The mRNA vaccine does not introduce the virus into your body. It instead gives your cells instructions to make a “spike protein” like the one found in the virus. Your body will recognize these spike proteins as foreign and create an immune response to get rid of them, so if it recognizes any new spike proteins being introduced to your body--the coronavirus--it will protect you against having a serious reaction! \nAnd if you’re worried about the vaccine altering your DNA, don’t! It does not go to the nucleus of your cells so it doesn’t affect your DNA at all. The mRNA is destroyed after it does its job.',
-  'choices': [5, 6]},
- 4: {'title': 'It’s doubtful that the COVID vaccine will work well.',
-  'text': 'We get this concern because the vaccine was developed only a couple of months and both the Pfizer and Moderna vaccines hover ~95% effective! But take a look at this number in comparison to some other familiar vaccines:Moderna - 94% effective, Pfizer - 95% effective, DTAP (Pertussis/Whooping Cough) - 80-90% effective, Variella (chickenpox) - 82% effective, MCV4, MPSV4 and MenB (Meningococcal disease) - 85-90%. Plus, the vaccine will be most effective if people get it!',
-  'choices': [4, 7]},
- 5: {'title': 'I’m young and/or healthy so I don’t need to get vaccinated.',
-  'text': 'That’s great that you feel healthy! But don’t take your health for granted. Plenty of young and otherwise healthy people have had bad side effects from COVID (Re: Long Covid). And just by being Black you are 1.1x as likely to catch coronavirus than white people. Around 155 out of 100,000 Black Americans have died from COVID-19 complications as of 2/2/21.\nMany Black Americans suffer from conditions that predispose them to having severe effects from COVID, such as (list conditions). If you or the people around you have any of these, you should get the vaccine for protection.\nIf you’re not concerned for your own safety, think about the safety of the people around you: parents, siblings, grandparents, uncles, aunts, cousins, friends, neighbors, etc.\nYou may be healthy and not have bad symptoms if you catch COVID, but others may not be so lucky. By getting the vaccine you can do your part to protect others in your community.',
-  'choices': [8, 9]}}
+responses = {
+    0: {
+        "title": "What's your concern about the Vaxx?",
+        "text": "Select one of your concerns below.",
+        "choices": [10, 11, 12, 13, 14],
+    },
+    1: {
+        "title": "The vaccine was developed so quickly...no way it’s legit.",
+        "text": "Considering that vaccines usually take 10-15 years to develop and these vaccines only took a couple of months, we get that! But, here’s the facts: No steps were skipped in the development process of the vaccine because scientists were able to leverage pre-existing technology. And in fact, the Moderna vaccine has been proven 94% effective and the Pfizer vaccines 95% effective.",
+        "choices": [0, 1],
+        "links": [
+            {
+                "url": "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Moderna.html",
+                "text": "More about Moderna",
+            },
+            {
+                "url": "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html",
+                "text": "More About Pfizer",
+            },
+        ],
+    },
+    2: {
+        "title": "The vaccine has adverse side effects, doesn’t it?",
+        "text": "True! There definitely have been some observable side effects. But, it’s normal to have side effects from a vaccine. You likely experienced pain after receiving your required school immunizations. You may have even felt tired or feverish. The COVID vaccine has similar side effects, but like other vaccines, they don’t last long. Visit the CDC website for more information.",
+        "choices": [3, 0],
+        "links": [
+            {
+                "url": "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/expect/after.html",
+                "text": "What To Expect",
+            }
+        ],
+    },
+    3: {
+        "title": "Don’t vaccines inject you with the virus in order to trigger your immune system?",
+        "text": "There are different kinds of vaccines. The kind you’re thinking of is called a live attenuated vaccine. These vaccines inject a weaker, asymptomatic form of the virus into your body, but won’t make you sick.\nHowever the Pfizer and Moderna COVID vaccines are mRNA vaccines, a new kind of vaccine that has been in development for many years. The mRNA vaccine does not introduce the virus into your body. It instead gives your cells instructions to make a “spike protein” like the one found in the virus. Your body will recognize these spike proteins as foreign and create an immune response to get rid of them, so if it recognizes any new spike proteins being introduced to your body--the coronavirus--it will protect you against having a serious reaction! \nAnd if you’re worried about the vaccine altering your DNA, don’t! It does not go to the nucleus of your cells so it doesn’t affect your DNA at all. The mRNA is destroyed after it does its job.",
+        "choices": [5, 6],
+    },
+    4: {
+        "title": "It’s doubtful that the COVID vaccine will work well.",
+        "text": "We get this concern because the vaccine was developed only a couple of months and both the Pfizer and Moderna vaccines hover ~95% effective! But take a look at this number in comparison to some other familiar vaccines:Moderna - 94% effective, Pfizer - 95% effective, DTAP (Pertussis/Whooping Cough) - 80-90% effective, Variella (chickenpox) - 82% effective, MCV4, MPSV4 and MenB (Meningococcal disease) - 85-90%. Plus, the vaccine will be most effective if people get it!",
+        "choices": [4, 7],
+    },
+    5: {
+        "title": "I’m young and/or healthy so I don’t need to get vaccinated.",
+        "text": "That’s great that you feel healthy! But don’t take your health for granted. Plenty of young and otherwise healthy people have had bad side effects from COVID (Re: Long Covid). And just by being Black you are 1.1x as likely to catch coronavirus than white people. Around 155 out of 100,000 Black Americans have died from COVID-19 complications as of 2/2/21.\nMany Black Americans suffer from conditions that predispose them to having severe effects from COVID, such as (list conditions). If you or the people around you have any of these, you should get the vaccine for protection.\nIf you’re not concerned for your own safety, think about the safety of the people around you: parents, siblings, grandparents, uncles, aunts, cousins, friends, neighbors, etc.\nYou may be healthy and not have bad symptoms if you catch COVID, but others may not be so lucky. By getting the vaccine you can do your part to protect others in your community.",
+        "choices": [8, 9],
+    },
+}
 
-reactions = {0: {'next': 1,
-  'text': 'Hmm, I get it’s effective, but how do I know if it’s harmful?'},
- 1: {'next': 4,
-  'text': 'Actually, I don’t get why I should be concerned about contracting COVID.'},
- 2: {'next': 3, 'text': 'How am I sure that the vaccine won’t give me COVID?'},
- 3: {'next': 0,
-  'text': 'Ok, so it doesn’t seem harmful! I wanna learn more about some of my other concerns.'},
- 4: {'next': 1,
-  'text': 'So, the vaccine works well...how was that possible if it was developed so fast?'},
- 5: {'next': -4, 'text': 'I’m not convinced. Let me see more facts.'},
- 6: {'next': 0,
-  'text': 'That sounds legit! I wanna learn more about some of my other concerns.'},
- 7: {'next': 0,
-  'text': 'I guess it does the job! I wanna learn more about some of my other concerns.'},
- 8: {'next': -4, 'text': 'Why should I actually be concerned?'},
- 9: {'next': 0,
-  'text': 'Yikes, I get it. I wanna learn more about some of my other concerns.'},
- 10: {'next': 1,
-  'text': 'The vaccine was developed so quickly...no way it’s legit.'},
- 11: {'next': 2, 'text': 'The vaccine has adverse side effects, doesn’t it?'},
- 12: {'next': 3,
-  'text': 'Don’t vaccines inject you with the virus in order to trigger your immune system?'},
- 13: {'next': 4,
-  'text': 'It’s doubtful that the COVID vaccine will work well.'},
- 14: {'next': 5,
-  'text': 'I’m young and/or healthy so I don’t need to get vaccinated.'}}
+reactions = {
+    0: {
+        "next": 1,
+        "text": "Hmm, I get it’s effective, but how do I know if it’s harmful?",
+    },
+    1: {
+        "next": 4,
+        "text": "Actually, I don’t get why I should be concerned about contracting COVID.",
+    },
+    2: {"next": 3, "text": "How am I sure that the vaccine won’t give me COVID?"},
+    3: {
+        "next": 0,
+        "text": "Ok, so it doesn’t seem harmful! I wanna learn more about some of my other concerns.",
+    },
+    4: {
+        "next": 1,
+        "text": "So, the vaccine works well...how was that possible if it was developed so fast?",
+    },
+    5: {"next": -4, "text": "I’m not convinced. Let me see more facts."},
+    6: {
+        "next": 0,
+        "text": "That sounds legit! I wanna learn more about some of my other concerns.",
+    },
+    7: {
+        "next": 0,
+        "text": "I guess it does the job! I wanna learn more about some of my other concerns.",
+    },
+    8: {"next": -4, "text": "Why should I actually be concerned?"},
+    9: {
+        "next": 0,
+        "text": "Yikes, I get it. I wanna learn more about some of my other concerns.",
+    },
+    10: {
+        "next": 1,
+        "text": "The vaccine was developed so quickly...no way it’s legit.",
+    },
+    11: {"next": 2, "text": "The vaccine has adverse side effects, doesn’t it?"},
+    12: {
+        "next": 3,
+        "text": "Don’t vaccines inject you with the virus in order to trigger your immune system?",
+    },
+    13: {"next": 4, "text": "It’s doubtful that the COVID vaccine will work well."},
+    14: {
+        "next": 5,
+        "text": "I’m young and/or healthy so I don’t need to get vaccinated.",
+    },
+}
+

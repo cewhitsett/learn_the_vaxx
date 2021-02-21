@@ -27,4 +27,4 @@ stats_info = {0: {'stat': '10%',
   'link': 'https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Moderna.html'},
  9: {'stat': '10%',
   'info': 'Percentage of clinical trial participants who were African American',
-  'link': 'https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Moderna.html, https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html'}}
+  'link': 'https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines.html'}}
