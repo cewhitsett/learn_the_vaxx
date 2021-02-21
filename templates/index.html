@@ -46,6 +46,16 @@
   #addy {
     margin-bottom: 100vh;
   }
+  #adventure {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+  }
+  h1 {
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
 </style>
 {% endblock %} {% block body %}
 <div id="app">
@@ -65,7 +75,7 @@
     </p>
   </div>
   <div id="chooser" class="chooser">
-    <a name="adventure"></a>
+    <a name="adventure" id="adventure"></a>
     <h2>[[info().title]]</h2>
     <p>[[allInfo[currentInfo].text]]</p>
     <figure v-if="info().pic">
@@ -107,7 +117,8 @@
       getNext: function(info) {
         this.currentInfo = info;
         setTimeout(function(){
-          document.querySelector("#chooser").scrollIntoView({ behavior: "smooth" });
+          // document.querySelector("#chooser").scrollIntoView({ behavior: "smooth" });
+          window.location = "#adventure";
         }, 100);
       },
       info: function() {

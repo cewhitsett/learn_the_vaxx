@@ -1,5 +1,6 @@
 from flask import Flask, redirect, render_template
 from data import state_info, responses, reactions
+from stats import stats_info
 
 app = Flask(__name__)
 
@@ -13,7 +14,7 @@ def about():
 
 @app.route("/stats")
 def stats():
-  return render_template("stats.html")
+  return render_template("stats.html", stats=stats_info)
 
 @app.route("/my_state")
 def state():
@@ -28,7 +29,19 @@ def internal_server_error():
   return redirect("500.html"), 500
 
 def get_states():
-  pass
+  lines = open("extras/state.txt","r").readlines()
+  state_data = {}
+  idx = 0
+  curr_state = ""
+  for line in lines:
+    if idx == 0:
+      curr_state = line.split(".")[1].strip()
+      state_data[curr_state] = []
+    else:
+      url = ".".join(line.split(".")[1:]).strip()
+      state_data[curr_state].append(url)
+    idx = (idx + 1) % 3
 
 if __name__ == "__main__":
+  get_states()
   app.run(debug=True)

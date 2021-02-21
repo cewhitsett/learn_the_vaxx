@@ -1,6 +1,36 @@
 {% extends "base.html" %}
 {% block style %}
+<style>
+.stat {
+  color: white; 
+  background-color: #C81F1B !important;
+}
+td>a {
+  color: #C81F1B !important;
+}
+</style>
 {% endblock %}
 {% block body %}
   <h1>Covid Statistics</h1>
+  <table class="table table-striped">
+  <thead>
+    <th scope="col">Statistic</th>
+    <th scope="col">Information</th>
+    <th scope="col">Source</th>
+  </thead>
+  <tbody>
+  {% for stat in stats.values() %}
+    <tr>
+	<th class="stat text-center" scope="row">{{ stat['stat'] }}</th>
+	<td>{{ stat['info'] }}</td>
+	<td>
+	{% if not (stat['link'] == 'Link' or stat['link'] == 'nan') %}
+	<a href="{{ stat['info'] }}">Source</a>
+	{% endif %}
+	</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+  </table>
+</div>
 {% endblock %}
