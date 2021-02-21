@@ -52,3 +52,17 @@ Vue.component('rebuttal', {
     </a>
   `,
 })
+<!-- 
+def get_states():
+  lines = open("extras/state.txt","r").readlines()
+  state_data = {}
+  idx = 0
+  curr_state = ""
+  for line in lines:
+    if idx == 0:
+      curr_state = line.split(".")[1].strip()
+      state_data[curr_state] = []
+    else:
+      url = ".".join(line.split(".")[1:]).strip()
+      state_data[curr_state].append(url)
+    idx = (idx + 1) % 3 -->
