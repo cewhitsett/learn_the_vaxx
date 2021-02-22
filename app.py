@@ -17,7 +17,7 @@ def about():
 def stats():
   return render_template("stats.html", stats=stats_info)
 
-@app.route("/my_state")
+@app.route("/info")
 def state():
   return render_template("states.html", state_info=state_info, sources=sources_info)
 
