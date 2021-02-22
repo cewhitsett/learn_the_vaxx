@@ -107,7 +107,7 @@
     <div class="links" v-if="info().links">
       <ul>
         <li v-for="link in info().links">
-          <a v-bind:href="link.url">[[link.text]]</a>
+          <a class="accent" v-bind:href="link.url">[[link.text]]</a>
         </li>
       </ul>
     </div>
