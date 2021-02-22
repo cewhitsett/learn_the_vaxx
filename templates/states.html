@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 {% block style %}
+<style>
+th>a {
+    color: #C81F1B !important;
+}
+</style>
 {% endblock %}
 {% block body %}
 <div id="app">
@@ -32,7 +37,7 @@
 
 <table class="table table-striped">
     <thead class="text-center">
-        <th scope="col">Additional Resources</th>
+        <th scope="col">The following sources were used in the creation of this website. We encourage you to take a look at these if you want to learn more.</th>
     </thead>
     <tbody>
         {% for source in sources.items() %}
