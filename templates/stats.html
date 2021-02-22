@@ -8,10 +8,32 @@
 td>a {
   color: #C81F1B !important;
 }
+h2 {
+  margin-top: 50px;
+}
+#related {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+#related-head {
+  margin-top: 100px;
+}
+#related-tab {
+  margin-bottom: 500px;
+}
 </style>
 {% endblock %}
 {% block body %}
   <h1>Covid Statistics</h1>
+
+  
+  <h2>Statistics on the Vaccine</h2>
+  <p>
+    Black Americans helped created the vaccine, and test how effective it was. We hope these stats will help you
+    better understand that the vaccine is safe for you and your family.
+  </p>
   <table class="table table-striped">
   <thead>
     <th scope="col">Statistic</th>
@@ -32,5 +54,33 @@ td>a {
   {% endfor %}
   </tbody>
   </table>
-</div>
+
+
+  <a name="related"></a>
+  <h2 id="related-head">Related COVID Statistics</h2>
+  <p>
+    COVID is proven to worsen other diagnoses, and people affected with the below illnesses also have a higher mortality rate if exposed to COVID.
+    Given the prevalence of illnesses below, you probably have at least one Black loved one that suffers from one of these.
+    Vaccinating yourself can help keep them healthy, even if you yourself are healthy.
+  </p>
+  <table class="table table-striped" id="related-tab">
+    <thead>
+      <th scope="col">Statistic</th>
+      <th scope="col">Information</th>
+      <th scope="col">Source</th>
+    </thead>
+    <tbody>
+    {% for stat in related.values() %}
+      <tr>
+    <th class="stat text-center" scope="row">{{ stat['stat'] }}</th>
+    <td>{{ stat['info'] }}</td>
+    <td>
+    {% if not (stat['link'] == 'Link' or stat['link'] == 'nan') %}
+    <a href="{{ stat['link'] }}" target="_blank">Source</a>
+    {% endif %}
+    </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+    </table>
 {% endblock %}

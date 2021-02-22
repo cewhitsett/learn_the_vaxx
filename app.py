@@ -1,6 +1,6 @@
 from flask import Flask, redirect, render_template
 from data import state_info, responses, reactions, testimonials
-from stats import stats_info
+from stats import stats_info, covid_related
 
 app = Flask(__name__)
 
@@ -14,7 +14,7 @@ def about():
 
 @app.route("/stats")
 def stats():
-  return render_template("stats.html", stats=stats_info)
+  return render_template("stats.html", stats=stats_info, related=covid_related)
 
 @app.route("/info")
 def state():
