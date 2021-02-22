@@ -147,6 +147,9 @@
         if (info === '-4' || info === -4) {
           window.location = "{{url_for('stats')}}";
         }
+        if (info === '-6' || info === -6) {
+          window.location = "{{url_for('stats', _anchor='related')}}";
+        }
         this.currentInfo = info;
         setTimeout(function(){
           // document.querySelector("#chooser").scrollIntoView({ behavior: "smooth" });
