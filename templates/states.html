@@ -22,6 +22,19 @@
   <a v-if="vaccine" class="accent" v-bind:href="vaccine">Vaccine State Information for [[state]]</a>
 </div>
 
+<table class="table table-striped">
+    <thead class="text-center">
+        <th scope="col">Additional Resources</th>
+    </thead>
+    <tbody>
+        {% for source in sources.items() %}
+        <tr>
+            <th class="stat text-center" scope="row"><a href="{{ source[1]['link'] }}">{{ source[1]['desc'] }}</a></th>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
 <script>
   var app = new Vue({
     el: "#app",
