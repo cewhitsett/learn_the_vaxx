@@ -276,7 +276,7 @@ reactions = {
         "next": 0,
         "text": "I guess it does the job! I wanna learn more about some of my other concerns.",
     },
-    8: {"next": -4, "text": "Why should I actually be concerned?"},
+    8: {"next": -6, "text": "Why should I actually be concerned?"},
     9: {
         "next": 0,
         "text": "Yikes, I get it. I wanna learn more about some of my other concerns.",
