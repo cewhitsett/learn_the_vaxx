@@ -4,6 +4,9 @@
 th>a {
     color: #C81F1B !important;
 }
+.pad-div {
+  margin-top: 50vh;
+}
 </style>
 {% endblock %}
 {% block body %}
@@ -35,6 +38,9 @@ th>a {
   <a v-if="vaccine" class="accent" v-bind:href="vaccine">Vaccine State Information for [[state]]</a>
 </div>
 
+
+<div class="pad-div"></div>
+<hr>
 <table class="table table-striped">
     <thead class="text-center">
         <th scope="col">The following sources were used in the creation of this website. We encourage you to take a look at these if you want to learn more.</th>
