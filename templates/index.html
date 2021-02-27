@@ -94,7 +94,7 @@
     <h2>[[info().title]]</h2>
     <br />
 
-    <p>[[allInfo[currentInfo].text]]</p>
+    <p v-for="txt in formatText(allInfo[currentInfo].text)">[[txt]]</p>
     <figure v-if="info().pic">
       <img
         class="big"
@@ -155,6 +155,9 @@
           // document.querySelector("#chooser").scrollIntoView({ behavior: "smooth" });
           window.location = "#adventure";
         }, 100);
+      },
+      formatText: function(text) {
+        return text.split("\n");
       },
       info: function() {
         return this.allInfo[this.currentInfo];

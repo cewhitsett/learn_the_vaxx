@@ -251,7 +251,7 @@ responses = {
 
 reactions = {
     0: {
-        "next": 1,
+        "next": -4,
         "text": "Hmm, I get it’s effective, but how do I know if it’s harmful?",
     },
     1: {
